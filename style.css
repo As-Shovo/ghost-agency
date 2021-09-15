@@ -1,0 +1,112 @@
+ /* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/Cover.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ghost-agency{
+    max-width: 1100px;
+    margin: 35px auto;
+    border: 2px solid;
+    background-image: linear-gradient(#2E0916,#200A2B);
+    border-radius: 20px;
+    padding: 2px;
+}
+
+
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menue ul{
+    display: flex;
+}
+
+.menue ul li{
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 14px;
+    padding: 10px 5px;
+    /* border: 2px solid; */
+    
+
+}
+
+.menue ul li:hover{
+    padding: 8px 15px;
+    border-radius: 50px;
+    border: 2px solid #FF5B79;
+    transition: .5s;
+}
+
+.menue ul li a {
+    text-decoration: none;
+    color: #FF5B79;
+}
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 0;
+    align-items: center;
+}
+
+.ghost-img img{
+    width: 470px;
+    position: relative;
+    animation: mymove 3s infinite;
+
+}
+.ghost-info{
+    color: #ffffff;
+}
+
+.ghost-info h4{
+    color: #FF5B79;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ghost-info h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 55px;
+    margin-top: 10px;
+}
+
+.ellipse{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    opacity: 90%;
+    width: 200px;
+}
+.blur{
+    position: absolute;
+    top: 170px;
+    right: 95px;
+    opacity: 98%;
+}
+
+@keyframes mymove {
+    0% {top: 0px;}
+    50% {top: 20px;}
+    100%{top: 0px}
+  }
